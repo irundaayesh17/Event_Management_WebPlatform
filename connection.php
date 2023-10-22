@@ -8,5 +8,5 @@
         die("Connection failed".$conn->connect_error);
     }
     echo " ";
-    
+    is_link
     ?>
