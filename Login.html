@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang en>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://unicons.iconsout.com//release/v4.0.0/css/line.css"/>
+    <script src="https://kit.fontawesome.com/a78751a7bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+    <nav class="nav">
+        <a href="#" class="nav_logo">EventHub</a>
+        <ul class="nav_items">
+            <li class="nav_item">
+                <a href="#" class="nav_link">Home</a>
+                <a href="#" class="nav_link">Contact Us</a>
+            </li>
+        </ul>
+                <button class="button" id="form-open">Login</button>
+            
+    </nav>
+    </header>
+    <section class="home">
+        <div class="content">
+            <h1>Design Your Next Dream with Us</h1>
+            <p>From intimate gatherings to grand celebrations,<br>
+            we have the expertise to design, plan, and execute events that reflect your style and personality.<br>
+            Trust us to make your dream event a reality.</p>
+        </div>
+        <div class="container">
+            <div class="formbox">
+                <i class="fa-solid fa-xmark form_close"></i>
+                <h2>Login</h2>
+                <form action="Login.php" method="post">
+                    <div class="inputfield">
+                        <div class="inputbox">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="username" placeholder="Username">
+                        </div>
+                        <div class="inputbox">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="btnfield">
+                        <button type="submit" name="login" id="login">Login</button>
+                    </div>
+                    <p class="forget">Don't have an account? <a href="#" id="signup">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="Login.js"></script>
+
+</body>
+</html>
