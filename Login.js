@@ -16,7 +16,5 @@ const formOpenBtn = document.querySelector("#form-open");
             formContainer.style.opacity = 0;
             formContainer.style.pointerEvents = 'none';
         });
+        
 
-        signupBtn.addEventListener("click", () => {
-            // Handle sign-up logic here
-        });

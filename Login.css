@@ -29,7 +29,7 @@ a{
        align-items: center;
        height: 100%;
        justify-content: space-between;
-       font-weight: bold;
+       font-weight: 400px;
 }
 .nav_item{
     column-gap: 35px;
@@ -38,6 +38,7 @@ a{
     color: #d7d2d2;
     font-size: 30px;
     cursor: auto;
+    font-weight: bold;
     
 }
 .nav_link{
@@ -65,6 +66,7 @@ a{
     position: relative;
     background-size: cover;
     background-position: center;  
+    min-height: 100vh;
 }
 .content{
     width: 100%;
@@ -176,4 +178,134 @@ form p a{
 }
 .inputfield{
     height: 200px;
+}
+footer{
+    
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #621b03, #621b03);
+    color: #ffffff;
+    padding: 30px 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 56px;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.col h3{
+    width: 80px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.col h4{
+    width: fit-content;
+    margin-bottom: 35px;
+    position: relative;
+    font-size: 15px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600px;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form button .fa-solid {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.email-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Use justify-content to move the elements to the right */
+}
+
+.email-input-container .fa-regular.fa-envelope {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Adjust the margin-left for the .fa-brands to position them to the right */
+.social-icons .fa-brands {
+    margin-left: 10px;
+}
+.social-icons .fa-brands:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+body {
+    overflow-x: hidden;
 }
