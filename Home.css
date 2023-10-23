@@ -52,7 +52,9 @@ a{
 .nav_link:hover{
     color: #df580a;
 }
-
+.nav_link_events:hover{
+    color: #df580a;
+}
 /*.button{
     padding: 6px 24px;
     background: transparent;
@@ -86,7 +88,7 @@ a{
     border-bottom-left-radius: 50px;
 }
 .sub-menu{
-    background: #2c2c2c;
+    background: #191B1C;
     padding: 20px;
     margin: 10px;
 
@@ -97,7 +99,7 @@ a{
 }
 .user-info h4{
     font-weight: 300;
-    color: #ffffff;
+    color: #C8C3BC;
 }
 .user-info img{
     width: 50px;
@@ -115,13 +117,13 @@ a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #525252;
+    color: #C8C3BC;
     margin: 12px 0;
 }
 .sub-menu-link p{
     width: 100%;
     font-weight: 500;
-    color: #ffffff;
+    color: #C8C3BC;
 }
 .sub-menu-link img{
     width: 40px;
@@ -408,4 +410,36 @@ form button .fa-solid {
 }
 body {
     overflow-x: hidden;
+}
+.sub_menu_1 {
+    display: none;
+    position: absolute;
+    background: #191B1C;
+    margin-top: 235px; /* Adjust this value as needed to move the submenu down */
+    margin-left: 80px;
+}
+.sub_menu_1 a{
+    color: #C8C3BC;
+    font-size: 15px;
+    font-weight: 600px;
+}
+
+.nav_link_events:hover + .sub_menu_1, .sub_menu_1:hover {
+    display: block;
+}
+
+.sub_menu_1 ul {
+    display: block;
+    margin: 15px;
+    
+}
+.sub_menu_1 ul li {
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    transition: color 0.3s;
+    margin-bottom: 25px; /* Add a transition for smooth color change */
+}
+.sub_menu_1 ul li a:hover{
+    color: #df580a;
 }
