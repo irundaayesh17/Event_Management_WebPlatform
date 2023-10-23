@@ -351,14 +351,13 @@ form .fa-regular {
     margin-right: 10px;
 }
 
-form input {
+form .emailinput {
     width: 100%;
     background: transparent;
     color: #ffffff;
     border: 0;
     outline: none;
 }
-
 form button {
     background: transparent;
     border: 0;

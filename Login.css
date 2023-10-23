@@ -238,7 +238,7 @@ form .fa-regular {
     margin-right: 10px;
 }
 
-form input {
+form .emailinput {
     width: 100%;
     background: transparent;
     color: #ffffff;
