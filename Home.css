@@ -199,24 +199,31 @@ span{
 .special_button:hover{
     border: none;
 }
-/*.home::before{
+.home::before {
     content: '';
-    position: absolute;
+    position: fixed; /* Fixed position to cover the whole viewport */
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(36, 36, 36, 0.6);
     z-index: 100;
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease-out;
 }
-.home.show::before{
+.home.show::before {
     opacity: 1;
     pointer-events: auto;
 }
+.event-container{
+    display: none;
+}
 .formbox{
     width: 90%;
-    max-width: 450px;
+    height: 90%;
+    max-width: 700px;
+    max-height: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -226,13 +233,8 @@ span{
     padding: 50px 60px 70px;
     text-align: center;
     transition: 0.4s ease-out;
-    opacity: 0;
-    
-}
-.home.show .formbox{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%,-50%) scale(1);
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 .form_close{
     position: absolute;
@@ -254,25 +256,31 @@ span{
     display: flex;
     align-items: center;
 }
+label{
+    flex-basis: 30%;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 25px;
+    font-weight: 600px;
+}
 input{
-    width: 100%;
+    width: 50%;
     background: transparent;
     border: 0;
     outline: 0;
-    padding: 18px 15px;
+    padding: 15px 5px;
 }
-.inputbox i{
-    margin-left: 15px;
-    color: #383839;
+textarea{
+    width: 50%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px 5px;
+    resize: none;
+   
 }
-form p{
-    text-align: center;
-    font-size: 13px;
-    margin-top: 13px;
-}
-form p a{
-    color: #383839;
-    text-decoration: none;
+.btnfield {
+    margin-top: 228px;
 }
 .btnfield button{
     width: 100%;
@@ -280,17 +288,20 @@ form p a{
     background: #e04e19;
     color: #fdfdff;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 0;
     outline: 0;
     cursor: pointer;
     transition: background 1s;
     font-weight: bold;
-    
+}
+.btnfield button:hover{
+    background: #a6360d;
+    transition: 0s;
 }
 .inputfield{
     height: 200px;
-}*/
+}
 footer{
     
     width: 100%;

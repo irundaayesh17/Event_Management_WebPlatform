@@ -62,28 +62,39 @@
                 <button type="button" class="special_button"><span></span>View More</button>
             </div>
         </div>
-       <!-- <div class="container">
+        <div class="event-container">
             <div class="formbox">
                 <i class="fa-solid fa-xmark form_close"></i>
-                <h2>Login</h2>
+                <h2>Event Registration</h2>
                 <form action="Home.php" method="post">
                     <div class="inputfield">
                         <div class="inputbox">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" name="username" placeholder="Username">
+                            <label for="event_id">Event ID</label>
+                            <input type="text" name="event_id" id="event_id" placeholder="Event ID" required>
                         </div>
                         <div class="inputbox">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" name="password" placeholder="Password">
+                            <label for="event_name">Event Name</label>
+                            <input type="text" name="event_name" id="event_name" placeholder="Event Name" required>
+                        </div>
+                        <div class="inputbox">
+                            <label for="event_date">Date</label>
+                            <input type="date" name="event_date" id="event_date">
+                        </div>
+                        <div class="inputbox">
+                            <label for="event_location">Location</label>
+                            <input type="text" name="event_location" id="event_location" placeholder="Location">
+                        </div>
+                        <div class="inputbox">
+                            <label for="event_description">Description</label>
+                            <textarea name="event_description" id="event_description" placeholder="Description" rows="4" required></textarea>
                         </div>
                     </div>
                     <div class="btnfield">
-                        <button type="submit" name="login" id="login">Login</button>
+                        <button type="submit" name="register_event" id="register_event">Register</button>
                     </div>
-                    <p class="forget">Don't have an account? <a href="#" id="signup">Sign Up</a></p>
                 </form>
             </div>
-        </div>-->
+        </div>
     </section>
 
     <script src="Home.js"></script>
