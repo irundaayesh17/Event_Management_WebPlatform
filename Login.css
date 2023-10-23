@@ -114,7 +114,6 @@ a{
     text-align: center;
     transition: 0.4s ease-out;
     opacity: 0;
-    pointer-events: none;
     
 }
 .home.show .formbox{
@@ -226,7 +225,7 @@ ul li a{
     text-decoration: none;
     font-weight: 600px;
 }
-form{
+.footer-form{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -258,16 +257,6 @@ form button {
 form button .fa-solid {
     font-size: 16px;
     color: #ffffff;
-}
-
-.email-input-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Use justify-content to move the elements to the right */
-}
-
-.email-input-container .fa-regular.fa-envelope {
-    margin-right: 10px;
 }
 
 .social-icons {
