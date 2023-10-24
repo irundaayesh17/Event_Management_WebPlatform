@@ -5,13 +5,13 @@ const formCloseButton2 = document.querySelector('.form_close2');
 const homeElement = document.querySelector('.home');
 
 function openUpdateContainer() {
-    updateContainer.style display = 'block';
+    updateContainer.style.display = 'block';
     homeElement.classList.add('show');
 }
 
 // Function to close the event container
 function closeUpdateContainer() {
-    updateContainer.style display = 'none';
+    updateContainer.style.display = 'none';
     homeElement.classList.remove('show');
 }
 
