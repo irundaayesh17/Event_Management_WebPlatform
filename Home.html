@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang en>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://unicons.iconsout.com//release/v4.0.0/css/line.css"/>
     <script src="https://kit.fontawesome.com/a78751a7bf.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +21,7 @@
                 <div class="sub_menu_1">
                     <ul>
                         <li><a href="#">Create Events</a></li>
-                        <li><a href="#">Update Events</a></li>
+                        <li><a href="#" class="submenu-update">Update Events</a></li>
                         <li><a href="#">View Events</a></li>
                         <li><a href="#">Remove Events</a></li>
                     </ul>
@@ -66,12 +67,8 @@
             <div class="formbox">
                 <i class="fa-solid fa-xmark form_close"></i>
                 <h2>Event Registration</h2>
-                <form action="Home.php" method="post">
+                <form action="Register.php" method="post">
                     <div class="inputfield">
-                        <div class="inputbox">
-                            <label for="event_id">Event ID</label>
-                            <input type="text" name="event_id" id="event_id" placeholder="Event ID" required>
-                        </div>
                         <div class="inputbox">
                             <label for="event_name">Event Name</label>
                             <input type="text" name="event_name" id="event_name" placeholder="Event Name" required>
@@ -95,9 +92,44 @@
                 </form>
             </div>
         </div>
+        <div class="update-container">
+            <div class="formbox">
+                <i class="fa-solid fa-xmark form_close2"></i>
+                <h2>Event Update</h2>
+                <form action="update.php" method="post">
+                    <div class="inputfield">
+                        <div class="inputbox">
+                            <label for="event_id">Event ID</label>
+                            <input type="text" name="event_id" id="event_id" placeholder="Search the Event ID" required>
+                            <i class="fa-solid fa-magnifying-glass" style="color: #e04e19;"></i>
+                        </div>
+                        <div class="inputbox">
+                            <label for="event_name">Event Name</label>
+                            <input type="text" name="event_name" id="event_name" placeholder="Event Name" required>
+                        </div>
+                        <div class="inputbox">
+                            <label for="event_date">Date</label>
+                            <input type="date" name="event_date" id="event_date">
+                        </div>
+                        <div class="inputbox">
+                            <label for="event_location">Location</label>
+                            <input type="text" name="event_location" id="event_location" placeholder="Location">
+                        </div>
+                        <div class="inputbox">
+                            <label for="event_description">Description</label>
+                            <textarea name="event_description" id="event_description" placeholder="Description" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <div class="btnfield2">
+                        <button type="submit" name="update_event" id="update_event">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>      
     </section>
 
     <script src="Home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 <footer>

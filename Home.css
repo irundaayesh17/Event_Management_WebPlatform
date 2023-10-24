@@ -219,6 +219,9 @@ span{
 .event-container{
     display: none;
 }
+.update-container{
+    display: none;
+}
 .formbox{
     width: 90%;
     height: 90%;
@@ -242,6 +245,12 @@ span{
     right: 20px;
     cursor: pointer;
 }
+.form_close2{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
 .formbox h2{
     font-size: 30px;
     font-weight: 600;
@@ -255,6 +264,7 @@ span{
     border-radius: 3px;
     display: flex;
     align-items: center;
+    border-radius: 20px;
 }
 label{
     flex-basis: 30%;
@@ -277,10 +287,13 @@ textarea{
     outline: 0;
     padding: 15px 5px;
     resize: none;
-   
+   border-radius: 20px;
 }
 .btnfield {
-    margin-top: 228px;
+    margin-top: 150px;
+}
+.btnfield2 {
+    margin-top: 230px;
 }
 .btnfield button{
     width: 100%;
@@ -288,7 +301,7 @@ textarea{
     background: #e04e19;
     color: #fdfdff;
     height: 40px;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -299,8 +312,29 @@ textarea{
     background: #a6360d;
     transition: 0s;
 }
+.btnfield2 button{
+    width: 100%;
+    flex-basis: 48%;
+    background: #e04e19;
+    color: #fdfdff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    font-weight: bold;
+}
+.btnfield2 button:hover{
+    background: #a6360d;
+    transition: 0s;
+}
 .inputfield{
     height: 200px;
+}
+.fa-magnifying-glass{
+    margin-left: 40px;
+    cursor: pointer;
 }
 footer{
     
@@ -313,6 +347,7 @@ footer{
     font-size: 13px;
     line-height: 20px;
 }
+
 .row{
     width: 100%;
     margin: auto;
