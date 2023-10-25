@@ -96,12 +96,12 @@
             <div class="formbox">
                 <i class="fa-solid fa-xmark form_close2"></i>
                 <h2>Event Update</h2>
-                <form action="update.php" method="post">
+                <form action="update.php" method="post" onsubmit="return validateForm()">
                     <div class="inputfield">
                         <div class="inputbox">
                             <label for="event_id">Event ID</label>
                             <input type="text" name="event_id" id="event_id" placeholder="Search the Event ID" required>
-                            <button id="search_button"><i class="fa-solid fa-magnifying-glass" style="color: #e04e19;"></i></button>
+                            <button type="submit" id="search_button"><i class="fa-solid fa-magnifying-glass" style="color: #e04e19;"></i></button>
                         </div>
                         <div class="inputbox">
                             <label for="event_name">Event Name</label>
@@ -112,7 +112,7 @@
                             <input type="date" name="event_date" id="event_date">
                         </div>
                         <div class="inputbox">
-                            <label for="event_location">Location</label>
+                            <label for="event_location" >Location</label>
                             <input type="text" name="event_location" id="event_location" placeholder="Location">
                         </div>
                         <div class="inputbox">
@@ -129,8 +129,8 @@
     </section>
 
     <script src="insert.js"></script>
-    <script src="update.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 <footer>

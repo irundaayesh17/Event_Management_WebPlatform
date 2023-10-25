@@ -22,7 +22,18 @@ if (isset($_POST['register_event'])) {
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-
+        $event_name = $_POST['event_name'];
+        if (!preg_match("/^[a-zA-Z\s]+$/", $event_name)) {
+            echo "<script>alert('Event Name can only contain letters.'); window.location = 'Home.html';</script>";
+            exit;
+        }
+    
+        // Validate event date
+        $event_date = $_POST['event_date'];
+        if (strtotime($event_date) < strtotime(date('Y-m-d'))) {
+            echo "<script>alert('Invalid event date. Please select a future date.'); window.location = 'Home.html';</script>";
+            exit;
+        }
         // SQL query to insert event data into the eventregister table
         $sql = "INSERT INTO eventregister (event_name, event_date, event_location, description) VALUES (?, ?, ?, ?)";
         
