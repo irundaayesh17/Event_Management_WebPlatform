@@ -22,8 +22,8 @@
                     <ul>
                         <li><a href="#">Create Events</a></li>
                         <li><a href="#" class="submenu-update">Update Events</a></li>
-                        <li><a href="#">View Events</a></li>
-                        <li><a href="#">Remove Events</a></li>
+                        <li><a href="view.php" class="submenu-view">View Events</a></li>
+                        <li><a href="#" class="submenu-delete">Remove Events</a></li>
                     </ul>
                 </div>
                 <a href="#" class="nav_link">Services</a>
@@ -125,7 +125,24 @@
                     </div>
                 </form>
             </div>
-        </div>      
+        </div> 
+        <div class="delete-container">
+            <div class="formbox1">
+                <i class="fa-solid fa-xmark form_close3"></i>
+                <h2>Delete Events</h2>
+                <form action="delete.php" method="post">
+                    <div class="inputfield">
+                        <div class="inputbox">
+                            <label for="event_id">Event ID</label>
+                            <input type="text" name="event_id" id="event_id" placeholder="Search the Event ID" required>
+                        </div>
+                    </div>
+                    <div class="btnfield3">
+                        <button type="submit" name="delete_event" id="delete_event">Remove</button>
+                    </div>
+                </form>
+            </div>
+        </div>              
     </section>
 
     <script src="insert.js"></script>

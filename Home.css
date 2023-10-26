@@ -222,11 +222,31 @@ span{
 .update-container{
     display: none;
 }
+.delete-container{
+    display: none;
+}
 .formbox{
     width: 90%;
     height: 90%;
     max-width: 700px;
     max-height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 101;
+    background: #fdfdff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    transition: 0.4s ease-out;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.formbox1{
+    width: 90%;
+    height: 90%;
+    max-width: 700px;
+    max-height: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -246,6 +266,12 @@ span{
     cursor: pointer;
 }
 .form_close2{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+.form_close3{
     position: absolute;
     top: 15px;
     right: 20px;
@@ -295,6 +321,9 @@ textarea{
 .btnfield2 {
     margin-top: 230px;
 }
+.btnfield3 {
+    margin-top: -100px;
+}
 .btnfield button{
     width: 100%;
     flex-basis: 48%;
@@ -326,6 +355,23 @@ textarea{
     font-weight: bold;
 }
 .btnfield2 button:hover{
+    background: #a6360d;
+    transition: 0s;
+}
+.btnfield3 button{
+    width: 100%;
+    flex-basis: 48%;
+    background: #e04e19;
+    color: #fdfdff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    font-weight: bold;
+}
+.btnfield3 button:hover{
     background: #a6360d;
     transition: 0s;
 }

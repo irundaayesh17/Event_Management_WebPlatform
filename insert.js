@@ -10,10 +10,13 @@ let submenu = document.getElementById("submenu")
         const createEventsLink = document.querySelector('.nav_link_events');
         const createEventsSubMenuLink = document.querySelector('.sub_menu_1 a');
         const createUpdatesSubMenuLink = document.querySelector('.submenu-update');
+        const createRemoveSubMenuLink = document.querySelector('.submenu-delete');
         const eventContainer = document.querySelector('.event-container');
         const updateContainer = document.querySelector('.update-container');
+        const deleteContainer = document.querySelector('.delete-container');
         const formCloseButton = document.querySelector('.form_close');
         const formCloseButton2 = document.querySelector('.form_close2');
+        const formCloseButton3 = document.querySelector('.form_close3');
         const homeElement = document.querySelector('.home');
         
         
@@ -39,6 +42,17 @@ let submenu = document.getElementById("submenu")
             updateContainer.style.display = 'none';
             homeElement.classList.remove('show');
         }
+
+        function openDeleteContainer() {
+            deleteContainer.style.display = 'block';
+            homeElement.classList.add('show');
+        }
+        
+        // Function to close the event container
+        function closeDeleteContainer() {
+            deleteContainer.style.display = 'none';
+            homeElement.classList.remove('show');
+        }
         
         // Event listener for clicking the "Create Events" link in the main menu
         createEventsLink.addEventListener('click', openEventContainer);
@@ -52,11 +66,20 @@ let submenu = document.getElementById("submenu")
         // Event listener for clicking the "update Events" link in the main menu
         createEventsLink.addEventListener('click', openUpdateContainer);
         
-        // Event listener for clicking the "Create Events" link in the sub-menu
+        // Event listener for clicking the "update Events" link in the sub-menu
         createUpdatesSubMenuLink.addEventListener('click', openUpdateContainer);
         
         // Event listener for clicking the form close button
         formCloseButton2.addEventListener('click', closeUpdateContainer);
+
+        // Event listener for clicking the "delete Events" link in the main menu
+        createEventsLink.addEventListener('click', openDeleteContainer);
+        
+        // Event listener for clicking the "delete Events" link in the sub-menu
+        createRemoveSubMenuLink.addEventListener('click', openDeleteContainer);
+        
+        // Event listener for clicking the form close button
+        formCloseButton3.addEventListener('click', closeDeleteContainer);
 
 
         function validateForm() {
